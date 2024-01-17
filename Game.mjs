@@ -45,6 +45,8 @@ export class Game {
 
 
     resize() {
+        if (!this.camera || !this.renderer) return;
+
         this.camera.aspect = window.innerWidth / window.innerHeight;
         this.camera.updateProjectionMatrix();
         this.renderer.setSize(window.innerWidth, window.innerHeight);
