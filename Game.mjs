@@ -70,6 +70,8 @@ export class Game {
         this.camera.position.y = 5;
         this.camera.rotation.x = -Math.PI / 2;
 
+        document.getElementById('loading').style.display = 'none';
+
         this.renderer.setAnimationLoop(() => this.animate());
     }
 
