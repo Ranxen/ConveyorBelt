@@ -79,7 +79,7 @@ export class Game {
 
     async loadFont() {
         let loader = new FontLoader();
-        await loader.loadAsync('https://threejsfundamentals.org/threejs/resources/threejs/fonts/helvetiker_regular.typeface.json').then(font => {
+        await loader.loadAsync('./models/font.json').then(font => {
             this.font = font;
         });
     }
